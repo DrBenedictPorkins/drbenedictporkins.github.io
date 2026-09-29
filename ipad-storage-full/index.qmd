@@ -10,6 +10,19 @@ By Benedict Porkins, [benedict.porkins@gmail.com](mailto:benedict.porkins@gmail.
 
 ![](images/00-hero.png){fig-alt="Diagram: the iPad camera roll, 6,359 files, is compared with iCloud; 4,808 files already in iCloud are set aside and 1,453 go to local models on Ollama that describe, sort and let a person review them; the result is 181 photos kept for iCloud Photos and 1,014 moved to Trash."}
 
+**TL;DR**
+
+- **Problem:** a kids' iPad full of photos, with iCloud Photos off, so there was no
+  telling which photos existed only on the iPad. Most of them were accidental shots.
+- **Rescue:** copied all 6,359 files to a Mac and compared them with a clean copy of
+  iCloud. 4,808 were already there; 1,453 were not.
+- **Sort with local AI:** two models served by Ollama on an RTX 4090 (24 GB) at home
+  did the work, and no photo left the house. `qwen3.6:35b`, a vision model,
+  described each photo and flagged accidental shots; `mistral-small3.2:24b`, a text
+  model, sorted the descriptions into categories. 1,195 photos took about 90 minutes.
+- **Result:** a review by category: keep 181, trash 1,014.
+- **Next:** import the 181 into Photos so they upload to iCloud.
+
 ## The problem
 
 My kids have an old iPad they use for games, learning apps and, as it turned

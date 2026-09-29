@@ -108,6 +108,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>By Benedict Porkins, <a href="mailto:benedict.porkins@gmail.com">benedict.porkins@gmail.com</a></p>
 <p><img src="images/00-hero.png" class="img-fluid" alt="Diagram: the iPad camera roll, 6,359 files, is compared with iCloud; 4,808 files already in iCloud are set aside and 1,453 go to local models on Ollama that describe, sort and let a person review them; the result is 181 photos kept for iCloud Photos and 1,014 moved to Trash."></p>
+<p><strong>TL;DR</strong></p>
+<ul>
+<li><strong>Problem:</strong> a kids’ iPad full of photos, with iCloud Photos off, so there was no telling which photos existed only on the iPad. Most of them were accidental shots.</li>
+<li><strong>Rescue:</strong> copied all 6,359 files to a Mac and compared them with a clean copy of iCloud. 4,808 were already there; 1,453 were not.</li>
+<li><strong>Sort with local AI:</strong> two models served by Ollama on an RTX 4090 (24 GB) at home did the work, and no photo left the house. <code>qwen3.6:35b</code>, a vision model, described each photo and flagged accidental shots; <code>mistral-small3.2:24b</code>, a text model, sorted the descriptions into categories. 1,195 photos took about 90 minutes.</li>
+<li><strong>Result:</strong> a review by category: keep 181, trash 1,014.</li>
+<li><strong>Next:</strong> import the 181 into Photos so they upload to iCloud.</li>
+</ul>
 <section id="the-problem" class="level2">
 <h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
 <p>My kids have an old iPad they use for games, learning apps and, as it turned out, a great deal of photography. When it ran out of storage, the photos were the reason.</p>
