@@ -176,7 +176,8 @@ deleted; trashed photos go to a folder called Trash.
 ## The results
 
 Of the 1,453 files, 1,195 were photos the tool could read. The other 258 were
-246 videos and 12 HEIC files, which it skips.
+246 videos and 12 HEIC files, which it skipped at the time; HEIC support has
+since been added.
 
 **Describing** took about 80 minutes for the 1,195 photos, with no failures. The
 vision model flagged 527 of them as accidental shots on its own.
@@ -218,8 +219,8 @@ their folders and captioned.
 **Upload the keepers.** Import the 181 kept photos into Photos, so that they
 upload to iCloud like everything else.
 
-**Handle what the tool skipped.** The 246 videos and 12 HEIC files still need a
-decision.
+**Handle what the tool skipped.** The 246 videos still need a decision; the 12
+HEIC files can now go through the tool.
 
 **Clean the Mac's own library.** The Mac's old Photos library, with its 996 items
 marked as not uploaded, needs the same treatment before iCloud Photos is turned on
