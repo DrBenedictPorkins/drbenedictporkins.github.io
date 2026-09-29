@@ -22,6 +22,8 @@ By Benedict Porkins, [benedict.porkins@gmail.com](mailto:benedict.porkins@gmail.
   model, sorted the descriptions into categories. 1,195 photos took about 90 minutes.
 - **Result:** a review by category: keep 181, trash 1,014.
 - **Next:** import the 181 into Photos so they upload to iCloud.
+- **Code:** [github.com/DrBenedictPorkins/image-categorizer](https://github.com/DrBenedictPorkins/image-categorizer),
+  open source, with a setup guide written for AI coding agents.
 
 ## The problem
 
